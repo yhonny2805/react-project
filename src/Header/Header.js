@@ -3,8 +3,15 @@ import './Header.css';
 
 function Header(props) {
     return (
-        <div className='Header'>
-            <h1>Are you ready for your Holidays!</h1>
+        <div>
+            <div>
+                <h1>
+                    Welcome to the Time Off Management System!
+        </h1>
+                <h2>
+                    Are you ready for your Holidays!
+        </h2>
+            </div>
         </div>
     );
 }
