@@ -1,4 +1,9 @@
 .Header {
     font-weight: bold;
     color: rgb(3, 3, 66);
+    margin-bottom: 80px;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
