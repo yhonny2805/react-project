@@ -7,3 +7,22 @@
     height: 30px;
     margin-top: 80px;
 }
+
+.Submit {
+
+    background: linear-gradient(135deg, rgba(183,222,237,0.83) 1%, rgba(183,222,237,1) 3%, rgba(183,222,237,1) 6%, rgba(78,118,196,1) 98%);
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 140px;
+    height: 35px;
+    margin-top: 120px;
+    margin-bottom: 165px;
+    border-color: black;
+    text-align: center;
+    margin:0 auto;
+}
+
+.Spacing {
+    margin-bottom: 50px;
+}
