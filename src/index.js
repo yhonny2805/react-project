@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-//import InitialFields from './Components/InitialFields/InitialFields';
-import Events from './Component/Events/Events';
+//import InitialFields from './src/Components/InitialFields/InitialFields';
+//import Events from './Component/Events/Events';
 
 
 
@@ -17,3 +17,4 @@ serviceWorker.unregister();
 //ReactDOM.render(<InitialFields />, document.getElementById('root'));
 ReactDOM.render(<App />, document.getElementById('root'));
 //ReactDOM.render(<Events />, document.getElementById('root'));
+//ReactDOM.render(<InitialFields />, document.getElementById('root'));
