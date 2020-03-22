@@ -6,7 +6,10 @@ class InitialFields extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { firstName: '', lastName: '', };
+        this.state = {
+            firstName: '',
+            lastName: '',
+        };
     }
 
 
@@ -22,13 +25,25 @@ class InitialFields extends React.Component {
             <form>
                 <div className=''>
                     <h2 className='subtitle'>Enter your full name and hit submit:</h2>
-                    <input className='Generic' placeholder='First Name' type="text" name='firstname'
-                        value={this.state.firstname} onChange={this.handleChange}
+                    <input className='Generic'
+                        name='firstname'
+                        type="text"
+                        placeholder='First Name'
+                        onChange={this.handleChange}
+                        value={this.state.firstname}
                     />
-                    <input className='Generic' placeholder='Last Name' type="text" name='lastname'
-                        value={this.state.lastname} onChange={this.handleChange}
+                    <input className='Generic'
+                        name='lastname'
+                        type="text"
+                        placeholder='Last Name'
+                        onChange={this.handleChange}
+                        value={this.state.lastname}
                     />
-                    <button className='Submit' type="submit">Submit</button>
+                    <button
+                        type="submit"
+                        className='Submit'>
+                        Submit
+                    </button>
                 </div>
 
             </form >
