@@ -1,7 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
-import Header from './Component/Header/Header';
 import Footer from './Component/Footer/Footer';
-import InitialFields from './Component/InitialFields/InitialFields';
+import Initialfields from './Component/Initialfields/Initialfields';
+import Loginpage from './Component/Loginpage/Loginpage';
 
 //import Events from './Component/Events/Events';
 import './App.css';
@@ -10,10 +11,7 @@ function App() {
   return (
     <div className='Backgmainpage'>
       <div>
-        <Header />
-      </div>
-      <div>
-        <InitialFields />
+        <Loginpage name='Yhonnatan' />
       </div>
       <div>
         <Footer />

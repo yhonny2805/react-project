@@ -5,13 +5,15 @@ button {
     border-radius: 6px;
     width: 140px;
     height: 35px;
-    margin-top: 80px;
-    margin-bottom: 20px;
     border-color: black;
 }
 
 .Centre {
     width: 150px;
     text-align: center;
-    margin:0 auto;
+    margin-left: 200px;
+}
+
+.loginbth{
+   margin: 0px;
 }

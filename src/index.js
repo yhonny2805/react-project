@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-//import InitialFields from './src/Components/InitialFields/InitialFields';
+import Header from "./Component/Header/Header";
+import Footer from "./Component/Footer/Footer";
+import Loginpage from './Component/Loginpage/Loginpage';
+import Initialfields from './Component/Initialfields/Initialfields';
 //import Events from './Component/Events/Events';
 
 
@@ -13,8 +16,10 @@ import * as serviceWorker from './serviceWorker';
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
+///////////////////////////////////////////////////////////////////////
 
-//ReactDOM.render(<InitialFields />, document.getElementById('root'));
+//ReactDOM.render(<Header />, document.getElementById('root'));
+//ReactDOM.render(<Initialfields />, document.getElementById('root'));
+//ReactDOM.render(<Loginpage />, document.getElementById('root'));
 ReactDOM.render(<App />, document.getElementById('root'));
-//ReactDOM.render(<Events />, document.getElementById('root'));
-//ReactDOM.render(<InitialFields />, document.getElementById('root'));
+//ReactDOM.render(<Footer />, document.getElementById('root'));
