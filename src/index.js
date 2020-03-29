@@ -7,6 +7,7 @@ import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
 import Loginpage from './Component/Loginpage/Loginpage';
 import Initialfields from './Component/Initialfields/Initialfields';
+import UseridList from './Component/UseridList/UseridList';
 //import Events from './Component/Events/Events';
 
 
@@ -17,9 +18,22 @@ import Initialfields from './Component/Initialfields/Initialfields';
 serviceWorker.unregister();
 
 ///////////////////////////////////////////////////////////////////////
-
-//ReactDOM.render(<Header />, document.getElementById('root'));
-//ReactDOM.render(<Initialfields />, document.getElementById('root'));
-//ReactDOM.render(<Loginpage />, document.getElementById('root'));
+//App
 ReactDOM.render(<App />, document.getElementById('root'));
+
+// ** Header **
+//ReactDOM.render(<Header />, document.getElementById('root'));
+
+//** Initialfields **
+//ReactDOM.render(<Initialfields />, document.getElementById('root'));
+
+//** Loginpage (Autenticacion) **
+//ReactDOM.render(<Loginpage />, document.getElementById('root'));
+
+// ** Lista **
+//ReactDOM.render(<UseridList />, document.getElementById('root'));
+
+//** Footer **
 //ReactDOM.render(<Footer />, document.getElementById('root'));
+
+
