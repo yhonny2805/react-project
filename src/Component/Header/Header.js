@@ -7,7 +7,6 @@ function Header(props) {
         <div className='Header' >
             <img className='mylogo' src={logo_toms_3} alt='logo' />
             <h1>Welcome to the Time Off Management System!</h1>
-            <h2> Are you ready for your Holidays!</h2>
         </div>
     );
 }

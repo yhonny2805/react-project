@@ -4,9 +4,9 @@ import './Footer.css';
 function Footer(props) {
     return (
         <div className='footer'>
-            <h2>
+            <h4>
                 If you have any questions, please send us an email to yourmanager@hr.com
-        </h2>
+        </h4>
         </div>
     );
 }
