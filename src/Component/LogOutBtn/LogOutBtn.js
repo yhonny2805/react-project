@@ -7,7 +7,7 @@ class LogOutBtn extends Component {
         return (
             <button
                 className='Centre'
-                onClick={this.props.onClick} >
+                type='submit' >
                 Log out
             </button>
         )

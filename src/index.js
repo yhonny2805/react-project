@@ -12,6 +12,7 @@ import * as serviceWorker from './serviceWorker';
 //import Navigationmenu from './Component/Navigationmenu/Navigationmenu';
 //import Events from './Component/Events/Events';
 //import Initloginpage from './Component/Initloginpage/Initloginpage';
+import EmployeeList from './Component/EmployeeList/EmployeeList';
 
 
 
@@ -22,7 +23,7 @@ serviceWorker.unregister();
 
 ///////////////////////////////////////////////////////////////////////
 //App
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));
 
 // ** Header **
 //ReactDOM.render(<Header />, document.getElementById('root'));
@@ -44,6 +45,9 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 //  ** Form **
 //ReactDOM.render(<Initloginpage />, document.getElementById('root'));
+
+//  ** EmployeeList **
+ReactDOM.render(<EmployeeList />, document.getElementById('root'));
 
 //** Footer **
 //ReactDOM.render(<Footer />, document.getElementById('root'));

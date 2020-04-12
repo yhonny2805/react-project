@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import Navigationmenu from '../Navigationmenu/Navigationmenu';
+import LogOutBtn from '../LogOutBtn/LogOutBtn';
 import './Initloginpage.css';
 
 function AuthenticatedGretings(props) {
@@ -10,6 +11,7 @@ function AuthenticatedGretings(props) {
         <div>
             <h1 className='h11'> Welcome {props.name}!</h1>
             < Navigationmenu />
+            < LogOutBtn />
         </div>
     )
 }

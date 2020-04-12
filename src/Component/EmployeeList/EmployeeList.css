@@ -1,0 +1,19 @@
+.h21 {
+    text-align: center;
+}
+
+table, th,td {
+  margin-top: 50px;
+  border: 2px solid black;
+  font-weight: bold ;
+}
+
+th,td {
+    padding-right: 50px;
+}
+
+.mancolor {
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg , #80D0C7 50%, #fbf5f5 100%);
+    height: 610px;
+}
