@@ -15,7 +15,7 @@ function AuthenticatedGretings(props) {
 }
 
 function shoot() {
-    alert("You are about to logout!");
+    alert("You are about to log out!");
 }
 
 function UnauthenticatedGretings(props) {

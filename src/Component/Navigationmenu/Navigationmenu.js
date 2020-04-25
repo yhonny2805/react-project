@@ -31,7 +31,7 @@ function Navigationmenu(props) {
                                 <Link to="/Getreports">Get Reports</Link>
                             </li>
                             <li>
-                                <Link to="/productos">History</Link>
+                                <Link to="/News">News</Link>
                             </li>
                         </ul>
                     </div>

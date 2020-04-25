@@ -11,7 +11,7 @@ import * as serviceWorker from './serviceWorker';
 //import UseridList from './Component/UseridList/UseridList';
 import Navigationmenu from './Component/Navigationmenu/Navigationmenu';
 //import Events from './Component/Events/Events';
-import Initloginpage from './Component/Initloginpage/Initloginpage';
+//import Initloginpage from './Component/Initloginpage/Initloginpage';
 //import EmployeeList from './Component/EmployeeList/EmployeeList';
 //import History from './Component/History/History';
 //import NewRequest from './Component/NewRequests/NewRequests';
@@ -34,7 +34,7 @@ serviceWorker.unregister();
 //ReactDOM.render(<Greetings />, document.getElementById('root'));
 
 //** Navigation Menu **
-//ReactDOM.render(<Navigationmenu />, document.getElementById('root'));
+ReactDOM.render(<Navigationmenu />, document.getElementById('root'));
 
 //** Initialfields **
 //RectDOM.render(<Initialfields />, document.getElementById('root'));
@@ -46,7 +46,7 @@ serviceWorker.unregister();
 //ReactDOM.render(<UseridList />, document.getElementById('root'));
 
 //  ** Form/Initloginpage (Autenticacion)**
-ReactDOM.render(<Initloginpage />, document.getElementById('root'));
+//ReactDOM.render(<Initloginpage />, document.getElementById('root'));
 
 //  ** EmployeeList **
 //ReactDOM.render(<EmployeeList />, document.getElementById('root')); 
