@@ -9,7 +9,7 @@ button {
 }
 
 .formlayout {
-    height: 590px;
+    height: 100px;
     text-align: center;
 
 }
@@ -20,12 +20,12 @@ button {
     border-style: outset;
     border-radius: 5px;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 10px;
     width: 300px;
     background: transparent;
 }
 
-.h11 {
+.her11 {
     text-align: center;
 }
 
@@ -49,5 +49,5 @@ button {
     color: white;
     width: 315px; 
     border-radius: 5px;
-    margin-left: 435px;
+    margin-left: 30px;
 }

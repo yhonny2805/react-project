@@ -1,7 +1,7 @@
 import React from 'react';
-import './EmployeeList.css';
+import './History.css';
 
-class EmployeeList extends React.Component {
+class History extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,7 +12,7 @@ class EmployeeList extends React.Component {
     }
 
     componentDidMount() {
-        fetch("https://my-json-server.typicode.com/yhonny2805/test/employees")
+        fetch("https://my-json-server.typicode.com/yhonny2805/user-history/holidays")
             .then(res => res.json())
             .then(
                 (result) => {
@@ -41,21 +41,21 @@ class EmployeeList extends React.Component {
             return <div> Loading...</div>;
         } else {
             return (
-                <ul className='mancolor'>
-                    <h2 className='h21'>Employee List Report</h2>
+                <ul className='main'>
+                    <div><h2 className='h21'>History Report</h2></div>
                     <table>
                         <tr>
                             <th>ID</th>
-                            <th>Complete Name</th>
-                            <th>Username</th>
-                            <th>Emai Address</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Total Holidays Spent</th>
                         </tr>
                         {items.map(item => (
-                            <tr key={item.name}>
+                            <tr key={item.start}>
                                 <td>{item.id}</td>
-                                <td>{item.name}</td>
-                                <td> {item.username} </td>
-                                <td> {item.email}</td>
+                                <td>{item.start}</td>
+                                <td> {item.end} </td>
+                                <td> {item.spent}</td>
                             </tr>
                         ))}
                     </table>
@@ -65,4 +65,4 @@ class EmployeeList extends React.Component {
     }
 }
 
-export default EmployeeList;
+export default History;

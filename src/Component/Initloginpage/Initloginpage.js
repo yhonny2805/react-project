@@ -1,7 +1,5 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 import Navigationmenu from '../Navigationmenu/Navigationmenu';
 import LogOutBtn from '../LogOutBtn/LogOutBtn';
 import './Initloginpage.css';
@@ -9,11 +7,15 @@ import './Initloginpage.css';
 function AuthenticatedGretings(props) {
     return (
         <div>
-            <h1 className='h11'> Welcome {props.name}!</h1>
+            <h1 className='her11'> Welcome {props.name}!</h1>
             < Navigationmenu />
-            < LogOutBtn />
+            <button onClick={shoot} className='divtbtn01'>Logout</button>
         </div>
     )
+}
+
+function shoot() {
+    alert("You are about to logout!");
 }
 
 function UnauthenticatedGretings(props) {
@@ -28,6 +30,7 @@ class Initloginpage extends React.Component {
 
     render() {
         return (
+
             <Formik
                 initialValues={{ email: "", password: "" }}
                 validate={values => {
@@ -56,9 +59,6 @@ class Initloginpage extends React.Component {
                     <Form className='formlayout'>
                         {this.authenticated ? null : (
                             <div>
-                                <div>
-                                    <Header />
-                                </div>
                                 <div className='h33'>
                                     <h3> Are you ready for your Holidays!</h3>
                                 </div>
@@ -100,9 +100,6 @@ class Initloginpage extends React.Component {
                                     Sign in
                                 </button>
                                 <br />
-                                <div>
-                                    <Footer />
-                                </div>
                             </div>
                         )}
                         {this.authenticated ? <AuthenticatedGretings name={this.props.name} /> : <UnauthenticatedGretings />}

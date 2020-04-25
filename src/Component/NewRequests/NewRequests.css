@@ -1,0 +1,21 @@
+
+  
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica Neue;
+}
+  
+a{
+  color: white;
+}
+p{
+  margin-top: 1em;
+  text-align: center;
+  color: black;
+}
+
+.dats{
+  margin-top: 20px;
+}

@@ -1,14 +1,22 @@
-.Header {
-    font-weight: bold;
-    color: rgb(3, 3, 66);
-    display: inline-block;
-    width: 100%; clear:both;
-    text-align: center;
-    white-space: nowrap;
+.header {
+    height: 100px;
 }
 
 .mylogo {
-     float:left;
-        margin-left: 10px;
+    position: absolute;
+    margin-left: -140px !important;  /* 50% of your logo width */
+    display: block;
+
     
+}
+
+.head01 {
+
+    font-weight: bold;
+    color: rgb(3, 3, 66);
+    width: 100%; clear:both;
+    text-align: center;
+    margin-top: 10px;
+    display: block;
+
 }
