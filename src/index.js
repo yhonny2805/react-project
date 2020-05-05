@@ -5,7 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 //import Header from "./Component/Header/Header";
 //import Footer from "./Component/Footer/Footer";
-//import Greetings from './Component/Greetings/Greetings';
+
+import Greetings from './Component/Greetings/Greetings';
 //import Loginpage from './Component/Loginpage/Loginpage';
 //import Initialfields from './Component/Initialfields/Initialfields';
 //import UseridList from './Component/UseridList/UseridList';
@@ -15,7 +16,8 @@ import * as serviceWorker from './serviceWorker';
 //import EmployeeList from './Component/EmployeeList/EmployeeList';
 //import History from './Component/History/History';
 //import NewRequest from './Component/NewRequests/NewRequests';
-import HistoryH from './Component/HistoryH/HistoryH';
+//import HistoryH from './Component/HistoryH/HistoryH';
+import LoginControl from './Component/LoginControl/LoginControl';
 
 
 
@@ -31,8 +33,11 @@ serviceWorker.unregister();
 // ** Header **
 //ReactDOM.render(<Header />, document.getElementById('root'));
 
-// ** Greetings **
-//ReactDOM.render(<Greetings />, document.getElementById('root'));
+// Try changing to isLoggedIn={true}:
+ReactDOM.render(<Greetings isLoggedIn={false} />, document.getElementById('root'));
+
+// Login Control:
+ReactDOM.render(<LoginControl />, document.getElementById('root'));
 
 //** Navigation Menu **
 //ReactDOM.render(<Navigationmenu />, document.getElementById('root'));
@@ -59,7 +64,7 @@ serviceWorker.unregister();
 //ReactDOM.render(<NewRequest />, document.getElementById('root'));
 
 //  ** HistoryH **
-ReactDOM.render(<HistoryH />, document.getElementById('root'));
+//ReactDOM.render(<HistoryH />, document.getElementById('root'));
 
 //** Footer **
 //ReactDOM.render(<Footer />, document.getElementById('root'));

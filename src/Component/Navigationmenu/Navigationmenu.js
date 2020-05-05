@@ -2,13 +2,14 @@ import React from 'react';
 import logo_toms_3 from '../Header/logo_toms_3.png';
 import {
     BrowserRouter as Router,
-    Switch, Route, Link, useHistory, useLocation
+    Switch, Route, Link, useHistory, useLocation, Prompt, useRouteMatch
 } from "react-router-dom";
 
 import Initloginpage from '../Initloginpage/Initloginpage';
 import NewRequests from '../NewRequests/NewRequests';
 import History from '../History/History';
 import './Navigationmenu.css';
+
 
 
 function Navigationmenu(props) {
@@ -32,6 +33,9 @@ function Navigationmenu(props) {
                             </li>
                             <li>
                                 <Link to="/News">News</Link>
+                            </li>
+                            <li>
+                                <button onClick={LogOutBtn} type='submit' className='divtbtn01'>Logout</button>
                             </li>
                         </ul>
                     </div>
@@ -66,5 +70,14 @@ function PaginaNoEncontrada() {
     let direccion = useLocation();
     return <div><h2 className='h22'>This page doesn't exist or is broken</h2><p><code>{direccion.pathname}</code></p></div>;
 }
+
+function LogOutBtn() {
+
+
+}
+
+
+
+
 
 export default Navigationmenu;

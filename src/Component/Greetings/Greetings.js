@@ -1,26 +1,21 @@
-//import React from 'react';
-//import './Greetings.css';
-//import InitialFields from '../Initialfields/Initialfields';
-//import Navigationmenu from '../Navigationmenu/Navigationmenu';
-//import Initloginpage from '../Initloginpage/Initloginpage';
-//import Loginpage from '../Loginpage/Loginpage';
+import React from 'react';
+import './Greetings.css';
 
-// function authenticatedGreetings(props) {
-//     return <Navigationmenu />
 
-// }
+function UserGreeting(props) {
+    return <h1>Welcome back!</h1>;
+}
 
-// function UnauthenticatedGreetings(props) {
-//     return <Initloginpage />
-// }
+function GuestGreeting(props) {
+    return <h1>Please sign up.</h1>;
+}
 
-// class Greetings extends React.Component {
-//     render() {
-//         if (this.props.authenticated) {
-//             return <authenticatedGreetings name={this.props.name} />;
-//         }
-//         return <UnauthenticatedGreetings />;
-//     }
-// }
+function Greetings(props) {
+    const isLoggedIn = props.isLoggedIn;
+    if (isLoggedIn) {
+        return <UserGreeting />;
+    }
+    return <GuestGreeting />;
+}
 
-//Export default Greetings;
+export default Greetings;
