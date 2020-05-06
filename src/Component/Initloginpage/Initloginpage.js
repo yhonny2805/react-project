@@ -5,22 +5,6 @@ import Header from '../Header/Header';
 import './Initloginpage.css';
 import Footer from '../Footer/Footer';
 
-function AuthenticatedGretings(props) {
-    return (
-        <div>
-            <h1 className='her11'> Welcome {props.name}!</h1>
-            < Navigationmenu />
-        </div>
-    )
-}
-
-
-function UnauthenticatedGretings(props) {
-    return <div>
-        <h1></h1>
-    </div>
-}
-
 
 class Initloginpage extends React.Component {
     authenticated = false;
@@ -94,13 +78,12 @@ class Initloginpage extends React.Component {
                                         />
                                     </div>
                                     <button
-                                        type="submit" disabled={isSubmitting}>
+                                        type="submit">
                                         Sign in
                                 </button>
                                     <br />
                                 </div>
                             )}
-                            {this.authenticated ? <AuthenticatedGretings name={this.props.name} /> : <UnauthenticatedGretings />}
                         </Form>
                     )}
                 </Formik>
