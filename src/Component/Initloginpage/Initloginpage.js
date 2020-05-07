@@ -1,12 +1,13 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import Navigationmenu from '../Navigationmenu/Navigationmenu';
 import Header from '../Header/Header';
 import './Initloginpage.css';
-import Footer from '../Footer/Footer';
 
 
 class Initloginpage extends React.Component {
+    constructor(props) {
+        super(props);
+    }
     authenticated = false;
 
     render() {
@@ -31,12 +32,13 @@ class Initloginpage extends React.Component {
                     }}
                     onSubmit={(values, { setSubmitting }) => {
                         this.authenticated = true;
+                        this.props.handleLogin();
                         values.email = "";
                         values.password = "";
                         setSubmitting(false);
                     }}
                 >
-                    {(touched, errors, isSubmitting, ) => (
+                    {(touched, errors, ) => (
 
                         <Form className='formlayout'>
                             {this.authenticated ? null : (
@@ -87,7 +89,6 @@ class Initloginpage extends React.Component {
                         </Form>
                     )}
                 </Formik>
-                <Footer />
             </div>
         )
     }

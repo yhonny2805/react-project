@@ -1,13 +1,12 @@
 import React from 'react';
-import logo_toms_3 from '../Header/logo_toms_3.png';
 import {
     BrowserRouter as Router,
     Switch, Route, Link, useHistory, useLocation, Prompt, useRouteMatch
 } from "react-router-dom";
-
 import Initloginpage from '../Initloginpage/Initloginpage';
 import NewRequests from '../NewRequests/NewRequests';
 import History from '../History/History';
+import Footer from '../Footer/Footer';
 import './Navigationmenu.css';
 
 
@@ -35,11 +34,14 @@ function Navigationmenu(props) {
                                 <Link to="/News">News</Link>
                             </li>
                             <li>
-                                <button onClick={LogOutBtn} type='submit' className='divtbtn01'>Logout</button>
+                                <button onClick={props.handleLogout} type='submit' className='divtbtn01'>Logout</button>
                             </li>
                         </ul>
                     </div>
                 </nav>
+                <div>
+                    <Footer />
+                </div>
                 <Switch>
                     <Route path="/new-requests">
                         <NewRequests />
